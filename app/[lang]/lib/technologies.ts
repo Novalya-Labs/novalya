@@ -1,38 +1,30 @@
-import openai from "@/public/images/technologies/openai.png";
-import mistralai from "@/public/images/technologies/openai.png";
-import nextjs from "@/public/images/technologies/openai.png"; // need to download the image
-import reactnative from "@/public/images/technologies/openai.png"; // need to download the image
-import n8n from "@/public/images/technologies/openai.png"; // need to download the image
-import supabase from "@/public/images/technologies/openai.png"; // need to download the image
-import cloudflare from "@/public/images/technologies/openai.png"; // need to download the image
-
 export const technologies = [
 	{
-		image: openai,
+		image: "/images/technologies/openai.png",
 		alt: "OpenAI",
 	},
 	{
-		image: nextjs,
+		image: "/images/technologies/nextjs.png",
 		alt: "Next.js",
 	},
 	{
-		image: mistralai,
+		image: "/images/technologies/mistralai.png",
 		alt: "Mistral AI",
 	},
 	{
-		image: reactnative,
+		image: "/images/technologies/reactnative.png",
 		alt: "React Native",
 	},
 	{
-		image: n8n,
+		image: "/images/technologies/n8n.png",
 		alt: "N8N",
 	},
 	{
-		image: supabase,
+		image: "/images/technologies/supabase.png",
 		alt: "Supabase",
 	},
 	{
-		image: cloudflare,
+		image: "/images/technologies/cloudflare.png",
 		alt: "Cloudflare",
 	},
 ];

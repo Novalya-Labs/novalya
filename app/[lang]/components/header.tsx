@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/logo.png";
 import { getDictionary } from "@/get-dictionary";
 import type { Locale } from "@/i18n-config";
 
@@ -11,7 +10,7 @@ export default async function Header({ lang }: { lang: Locale }) {
 		<header className="fixed top-4 left-4 right-4 z-50 flex justify-between items-center p-2 backdrop-blur-sm bg-white/20 rounded-lg border border-neutral-200/30">
 			<div className="flex-1 flex justify-start">
 				<Link href="/">
-					<Image src={logo} alt="Novalya" width={48} height={48} />
+					<Image src="/logo.png" alt="Novalya" width={48} height={48} />
 				</Link>
 			</div>
 			<ul className="flex gap-8 flex-2 justify-center">
