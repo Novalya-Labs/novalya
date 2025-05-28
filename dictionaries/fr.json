@@ -1,5 +1,65 @@
 {
+	"navigation": {
+		"home": "Accueil",
+		"teams": "Notre équipe",
+		"services": "Services",
+		"blogs": "Blogs",
+		"contact": "Parler maintenant"
+	},
 	"home": {
-		"title": "Accueil"
+		"metatags": {
+			"title": "Novalya — Solutions technologiques sur mesure",
+			"description": "Novalya conçoit et développe des solutions numériques sur mesure pour booster la performance des entreprises. Découvrez nos services innovants."
+		},
+		"hero": {
+			"title": "Solutions technologiques sur mesure",
+			"description": "Novalya conçoit et développe des solutions numériques sur mesure pour booster la performance des entreprises. Découvrez nos services innovants."
+		},
+		"technologies": {
+			"title": "Technologies que nous utilisons"
+		},
+		"ourServices": {
+			"title": "Nos services"
+		},
+		"ourProcess": {
+			"title": "Notre processus"
+		},
+		"about": {
+			"title": "À propos de nous"
+		},
+		"blogs": {
+			"title": "Blogs"
+		}
+	},
+	"contact": {
+		"title": "Contactez-nous",
+		"metatags": {
+			"title": "Contactez-nous",
+			"description": "Contactez-nous pour discuter de vos besoins en technologie. Nous sommes là pour vous accompagner dans la transformation digitale de votre entreprise."
+		}
+	},
+	"teams": {
+		"title": "Notre équipe",
+		"metatags": {
+			"title": "Notre équipe",
+			"description": "Découvrez notre équipe de spécialistes en technologie. Nous sommes là pour vous accompagner dans la transformation digitale de votre entreprise."
+		}
+	},
+	"services": {
+		"title": "Nos services",
+		"metatags": {
+			"title": "Nos services",
+			"description": "Découvrez nos services innovants. Nous vous accompagnons dans la transformation digitale de votre entreprise."
+		}
+	},
+	"blogs": {
+		"title": "Blogs",
+		"metatags": {
+			"title": "Blogs",
+			"description": "Découvrez nos blogs sur la technologie. Nous partageons nos connaissances et expériences pour vous aider à mieux comprendre les enjeux de la technologie."
+		}
+	},
+	"footer": {
+		"copyright": "Tous droits réservés"
 	}
 }

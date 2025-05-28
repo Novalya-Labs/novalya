@@ -1,5 +1,65 @@
 {
+	"navigation": {
+		"home": "Home",
+		"teams": "Our Team",
+		"services": "Services",
+		"blogs": "Blogs",
+		"contact": "Talk now"
+	},
 	"home": {
-		"title": "Home"
+		"metatags": {
+			"title": "Novalya — Custom technology solutions",
+			"description": "Novalya designs and develops custom digital solutions to boost the performance of businesses. Discover our innovative services."
+		},
+		"hero": {
+			"title": "Custom technology solutions",
+			"description": "Novalya designs and develops custom digital solutions to boost the performance of businesses. Discover our innovative services."
+		},
+		"technologies": {
+			"title": "Technologies we use"
+		},
+		"about": {
+			"title": "About Us"
+		},
+		"ourServices": {
+			"title": "Our Services"
+		},
+		"ourProcess": {
+			"title": "Our Process"
+		},
+		"blogs": {
+			"title": "Blogs"
+		}
+	},
+	"contact": {
+		"title": "Contact Us",
+		"metatags": {
+			"title": "Contact Us",
+			"description": "Contact us to discuss your technology needs. We are here to help you transform your business digitally."
+		}
+	},
+	"teams": {
+		"title": "Our Team",
+		"metatags": {
+			"title": "Our Team",
+			"description": "Discover our team of specialists in technology. We are here to help you transform your business digitally."
+		}
+	},
+	"services": {
+		"title": "Our Services",
+		"metatags": {
+			"title": "Our Services",
+			"description": "Discover our services. We help you transform your business digitally."
+		}
+	},
+	"blogs": {
+		"title": "Blogs",
+		"metatags": {
+			"title": "Blogs",
+			"description": "Discover our blogs on technology. We share our knowledge and experiences to help you better understand the issues of technology."
+		}
+	},
+	"footer": {
+		"copyright": "All rights reserved"
 	}
 }
