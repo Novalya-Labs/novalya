@@ -5,7 +5,8 @@
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
-		"build:cloudflare": "NODE_OPTIONS='--max-old-space-size=2048' next build",
+		"build:cloudflare": "opennextjs-cloudflare build",
+		"deploy:cloudflare": "opennextjs-cloudflare deploy",
 		"start": "next start",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write"
