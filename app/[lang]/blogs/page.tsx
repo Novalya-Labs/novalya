@@ -38,68 +38,92 @@ export default async function BlogsPage(props: {
 	const { lang } = await props.params;
 	const dictionary = await getDictionary(lang);
 
-	// Get all blogs from database (in production) or use mock data (in development)
-	const allBlogs =
-		process.env.NODE_ENV === "development"
-			? [
-					{
-						slug: "novalya-agence-transformation-digitale",
-						title:
-							lang === "fr"
-								? "Novalya : Votre Partenaire pour la Transformation Digitale"
-								: "Novalya: Your Partner for Digital Transformation",
-						excerpt:
-							lang === "fr"
-								? "Découvrez comment Novalya accompagne les entreprises dans leur transformation digitale avec des solutions sur mesure et innovantes."
-								: "Discover how Novalya helps companies in their digital transformation with custom and innovative solutions.",
-						featuredImage: "/images/blog/novalya-transformation.jpg",
-						author: lang === "fr" ? "Équipe Novalya" : "Novalya Team",
-						readingTime: 5,
-						publishedAt: new Date("2024-12-15"),
-					},
-					{
-						slug:
-							lang === "fr"
-								? "pourquoi-choisir-nextjs-2025"
-								: "why-choose-nextjs-2025",
-						title:
-							lang === "fr"
-								? "Pourquoi Choisir Next.js en 2025 ?"
-								: "Why Choose Next.js in 2025?",
-						excerpt:
-							lang === "fr"
-								? "Next.js révolutionne le développement web moderne. Découvrez pourquoi cette technologie est devenue incontournable."
-								: "Next.js is revolutionizing modern web development. Discover why this technology has become essential.",
-						featuredImage: "/images/blog/nextjs-2025.jpg",
-						author: "Thomas Dubois",
-						readingTime: 7,
-						publishedAt: new Date("2024-12-10"),
-					},
-					{
-						slug:
-							lang === "fr"
-								? "ia-transformation-entreprise-2025"
-								: "ai-business-transformation-2025",
-						title:
-							lang === "fr"
-								? "L'IA au Service de Votre Entreprise en 2025"
-								: "AI at the Service of Your Business in 2025",
-						excerpt:
-							lang === "fr"
-								? "Comment l'intelligence artificielle peut transformer votre business ? Découvrez les solutions concrètes proposées par Novalya."
-								: "How can artificial intelligence transform your business? Discover concrete solutions offered by Novalya.",
-						featuredImage: "/images/blog/ai-business-2025.jpg",
-						author: "Sophie Martin",
-						readingTime: 8,
-						publishedAt: new Date("2024-12-05"),
-					},
-				]
-			: await getAllBlogs(
-					(globalThis as unknown as { cloudflare?: { env?: { DB: unknown } } })
-						.cloudflare?.env?.DB as never,
-					lang,
-					20,
-				);
+	// Mock data for development and build time
+	const mockBlogs = [
+		{
+			slug: "novalya-agence-transformation-digitale",
+			title:
+				lang === "fr"
+					? "Novalya : Votre Partenaire pour la Transformation Digitale"
+					: "Novalya: Your Partner for Digital Transformation",
+			excerpt:
+				lang === "fr"
+					? "Découvrez comment Novalya accompagne les entreprises dans leur transformation digitale avec des solutions sur mesure et innovantes."
+					: "Discover how Novalya helps companies in their digital transformation with custom and innovative solutions.",
+			featuredImage: "/images/blog/novalya-transformation.jpg",
+			author: lang === "fr" ? "Équipe Novalya" : "Novalya Team",
+			readingTime: 5,
+			publishedAt: new Date("2024-12-15"),
+		},
+		{
+			slug:
+				lang === "fr"
+					? "pourquoi-choisir-nextjs-2025"
+					: "why-choose-nextjs-2025",
+			title:
+				lang === "fr"
+					? "Pourquoi Choisir Next.js en 2025 ?"
+					: "Why Choose Next.js in 2025?",
+			excerpt:
+				lang === "fr"
+					? "Next.js révolutionne le développement web moderne. Découvrez pourquoi cette technologie est devenue incontournable."
+					: "Next.js is revolutionizing modern web development. Discover why this technology has become essential.",
+			featuredImage: "/images/blog/nextjs-2025.jpg",
+			author: "Thomas Dubois",
+			readingTime: 7,
+			publishedAt: new Date("2024-12-10"),
+		},
+		{
+			slug:
+				lang === "fr"
+					? "ia-transformation-entreprise-2025"
+					: "ai-business-transformation-2025",
+			title:
+				lang === "fr"
+					? "L'IA au Service de Votre Entreprise en 2025"
+					: "AI at the Service of Your Business in 2025",
+			excerpt:
+				lang === "fr"
+					? "Comment l'intelligence artificielle peut transformer votre business ? Découvrez les solutions concrètes proposées par Novalya."
+					: "How can artificial intelligence transform your business? Discover concrete solutions offered by Novalya.",
+			featuredImage: "/images/blog/ai-business-2025.jpg",
+			author: "Sophie Martin",
+			readingTime: 8,
+			publishedAt: new Date("2024-12-05"),
+		},
+	];
+
+	// Get all blogs from database (in production) or use mock data (in development and build time)
+	let allBlogs = mockBlogs;
+
+	// Only try to fetch from database if we have a database connection and not during build time
+	const database = (
+		globalThis as unknown as { cloudflare?: { env?: { DB: unknown } } }
+	).cloudflare?.env?.DB as never;
+
+	if (process.env.NODE_ENV === "production" && database) {
+		try {
+			const dbBlogs = await getAllBlogs(database, lang, 20);
+			// Transform database blogs to match mock blog structure
+			if (dbBlogs.length > 0) {
+				allBlogs = dbBlogs.map((blog) => ({
+					slug: blog.slug,
+					title: blog.title,
+					excerpt: blog.excerpt,
+					featuredImage: blog.featuredImage || "/images/blog/default.jpg",
+					author: blog.author,
+					readingTime: blog.readingTime || 5,
+					publishedAt: blog.publishedAt || new Date(),
+				}));
+			}
+		} catch (error) {
+			console.warn(
+				"Failed to fetch blogs from database, using mock data:",
+				error,
+			);
+			allBlogs = mockBlogs;
+		}
+	}
 
 	return (
 		<>

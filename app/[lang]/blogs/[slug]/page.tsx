@@ -14,15 +14,36 @@ export default async function BlogPage(props: {
 	const dictionary = await getDictionary(lang);
 
 	// Get blog from database (in production) or use mock data (in development)
-	const blog =
-		process.env.NODE_ENV === "development"
-			? getMockBlog(slug, lang)
-			: await getBlogBySlug(
-					(globalThis as unknown as { cloudflare?: { env?: { DB: unknown } } })
-						.cloudflare?.env?.DB as never,
-					slug,
-					lang,
-				);
+	let blog = getMockBlog(slug, lang);
+
+	// Only try to fetch from database if we have a database connection and not during build time
+	const database = (
+		globalThis as unknown as { cloudflare?: { env?: { DB: unknown } } }
+	).cloudflare?.env?.DB as never;
+
+	if (process.env.NODE_ENV === "production" && database) {
+		try {
+			const dbBlog = await getBlogBySlug(database, slug, lang);
+			if (dbBlog) {
+				blog = {
+					slug: dbBlog.slug,
+					title: dbBlog.title,
+					excerpt: dbBlog.excerpt,
+					content: dbBlog.content,
+					featuredImage: dbBlog.featuredImage || "/images/blog/default.jpg",
+					author: dbBlog.author,
+					readingTime: dbBlog.readingTime || 5,
+					publishedAt: dbBlog.publishedAt || new Date(),
+				};
+			}
+		} catch (error) {
+			console.warn(
+				"Failed to fetch blog from database, using mock data:",
+				error,
+			);
+			// blog remains as mock data
+		}
+	}
 
 	if (!blog) {
 		notFound();

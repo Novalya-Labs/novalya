@@ -18,17 +18,26 @@ export default async function Blogs({ lang }: { lang: Locale }) {
 	const dictionary = await getDictionary(lang);
 
 	// Get database from Cloudflare environment (this will be available in production)
-	const featuredBlogs =
-		process.env.NODE_ENV === "development"
-			? [] // For now, return empty array in development
-			: await getFeaturedBlogs(
-					(globalThis as unknown as { cloudflare?: { env?: { DB: unknown } } })
-						.cloudflare?.env?.DB as never,
-					lang,
-					3,
-				);
+	let featuredBlogs: MockBlog[] = [];
 
-	// Mock data for development
+	// Only try to fetch from database if we have a database connection and not during build time
+	const database = (
+		globalThis as unknown as { cloudflare?: { env?: { DB: unknown } } }
+	).cloudflare?.env?.DB as never;
+
+	if (process.env.NODE_ENV === "production" && database) {
+		try {
+			featuredBlogs = await getFeaturedBlogs(database, lang, 3);
+		} catch (error) {
+			console.warn(
+				"Failed to fetch blogs from database, using mock data:",
+				error,
+			);
+			featuredBlogs = [];
+		}
+	}
+
+	// Mock data for development and build time
 	const mockBlogs: MockBlog[] = [
 		{
 			slug: "novalya-agence-transformation-digitale",
