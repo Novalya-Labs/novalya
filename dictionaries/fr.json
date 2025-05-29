@@ -239,7 +239,22 @@
 		}
 	},
 	"footer": {
+		"description": "Novalya est une entreprise spécialisée dans la transformation digitale pour les PME. Nous accompagnons les PME dans leur transition numérique.",
 		"copyright": "Tous droits réservés",
+		"contactTitle": "Contact",
+		"services": [
+			{ "id": "audit", "text": "Audit et Stratégie Digitale" },
+			{
+				"id": "automation",
+				"text": "Automatisation Intelligente des Processus"
+			},
+			{ "id": "ai", "text": "Intégration d'Intelligence Artificielle (IA)" },
+			{
+				"id": "development",
+				"text": "Développement de Solutions Web & Mobile Sur Mesure"
+			},
+			{ "id": "support", "text": "Accompagnement et Formation" }
+		],
 		"contact": {
 			"phone": "+33652198725",
 			"phoneLabel": "+33 6 52 19 87 25",
@@ -255,6 +270,13 @@
 		"legal": {
 			"mentions": "Mentions Légales",
 			"privacy": "Politique de Confidentialité"
+		},
+		"company": {
+			"title": "Entreprise",
+			"links": [
+				{ "id": "privacy", "text": "Politique de Confidentialité" },
+				{ "id": "legal", "text": "Mentions Légales" }
+			]
 		}
 	}
 }

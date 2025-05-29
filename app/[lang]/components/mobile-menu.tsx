@@ -1,8 +1,22 @@
+"use client";
+
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function MobileMenu({ lang, navigation }: { lang: string; navigation: any }) {
+export default function MobileMenu({
+	lang,
+	navigation,
+}: {
+	lang: string;
+	navigation: {
+		home: string;
+		teams: string;
+		services: string;
+		blogs: string;
+		contact: string;
+	};
+}) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggleMenu = () => {
@@ -12,6 +26,7 @@ export default function MobileMenu({ lang, navigation }: { lang: string; navigat
 	return (
 		<div className="lg:hidden">
 			<button
+				type="button"
 				onClick={toggleMenu}
 				className="p-2 text-white focus:outline-none focus:ring-2 focus:ring-primary-blue rounded-md"
 				aria-expanded={isOpen}
@@ -32,6 +47,7 @@ export default function MobileMenu({ lang, navigation }: { lang: string; navigat
 				>
 					<div className="absolute top-4 right-4">
 						<button
+							type="button"
 							onClick={toggleMenu}
 							className="p-2 text-white focus:outline-none focus:ring-2 focus:ring-primary-blue rounded-md"
 							aria-label="Fermer le menu"
@@ -47,7 +63,7 @@ export default function MobileMenu({ lang, navigation }: { lang: string; navigat
 							onClick={toggleMenu}
 						>
 							{navigation.home}
-							<span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-blue-purple transition-all duration-300 group-hover:w-full"></span>
+							<span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-blue-purple transition-all duration-300 group-hover:w-full" />
 						</Link>
 						<Link
 							href={`/${lang}/teams`}
@@ -55,7 +71,7 @@ export default function MobileMenu({ lang, navigation }: { lang: string; navigat
 							onClick={toggleMenu}
 						>
 							{navigation.teams}
-							<span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-blue-purple transition-all duration-300 group-hover:w-full"></span>
+							<span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-blue-purple transition-all duration-300 group-hover:w-full" />
 						</Link>
 						<Link
 							href={`/${lang}/services`}
@@ -63,7 +79,7 @@ export default function MobileMenu({ lang, navigation }: { lang: string; navigat
 							onClick={toggleMenu}
 						>
 							{navigation.services}
-							<span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-blue-purple transition-all duration-300 group-hover:w-full"></span>
+							<span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-blue-purple transition-all duration-300 group-hover:w-full" />
 						</Link>
 						<Link
 							href={`/${lang}/blogs`}
@@ -71,7 +87,7 @@ export default function MobileMenu({ lang, navigation }: { lang: string; navigat
 							onClick={toggleMenu}
 						>
 							{navigation.blogs}
-							<span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-blue-purple transition-all duration-300 group-hover:w-full"></span>
+							<span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-blue-purple transition-all duration-300 group-hover:w-full" />
 						</Link>
 						<Link
 							href={`/${lang}/contact`}
@@ -84,10 +100,32 @@ export default function MobileMenu({ lang, navigation }: { lang: string; navigat
 
 					{/* Éléments décoratifs */}
 					<div className="floating-elements-container pointer-events-none">
-						<div className="geometric-shape shape-circle bg-gradient-blue-purple animate-pulse w-64 h-64" style={{ top: '10%', left: '-10%', opacity: '0.1', filter: 'blur(60px)' }}></div>
-						<div className="geometric-shape shape-circle bg-gradient-cyan-blue animate-pulse delay-500 w-80 h-80" style={{ bottom: '10%', right: '-5%', opacity: '0.1', filter: 'blur(70px)' }}></div>
-						<div className="particle particle-blue animate-float w-3 h-3" style={{ top: '30%', right: '20%' }}></div>
-						<div className="particle particle-purple animate-float delay-400 w-4 h-4" style={{ bottom: '25%', left: '15%' }}></div>
+						<div
+							className="geometric-shape shape-circle bg-gradient-blue-purple animate-pulse w-64 h-64"
+							style={{
+								top: "10%",
+								left: "-10%",
+								opacity: "0.1",
+								filter: "blur(60px)",
+							}}
+						/>
+						<div
+							className="geometric-shape shape-circle bg-gradient-cyan-blue animate-pulse delay-500 w-80 h-80"
+							style={{
+								bottom: "10%",
+								right: "-5%",
+								opacity: "0.1",
+								filter: "blur(70px)",
+							}}
+						/>
+						<div
+							className="particle particle-blue animate-float w-3 h-3"
+							style={{ top: "30%", right: "20%" }}
+						/>
+						<div
+							className="particle particle-purple animate-float delay-400 w-4 h-4"
+							style={{ bottom: "25%", left: "15%" }}
+						/>
 					</div>
 				</div>
 			)}
