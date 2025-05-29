@@ -5,7 +5,7 @@ export default async function AboutUs({ lang }: { lang: Locale }) {
 	const dictionary = await getDictionary(lang);
 
 	return (
-		<section className="flex flex-col gap-8 py-14 container mx-auto">
+		<section className="flex flex-col gap-8 py-14 container mx-auto px-4 md:px-0">
 			<h2 className="text-4xl font-bold text-center mb-8">
 				{dictionary.home.about.title}
 			</h2>

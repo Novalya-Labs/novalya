@@ -15,7 +15,7 @@ export default async function Technologies({ lang }: { lang: Locale }) {
 
 	return (
 		<section className="flex flex-col items-center justify-center py-14 bg-gradient-to-r from-cyan-800 to-purple-800">
-			<div className="container mx-auto text-center">
+			<div className="container mx-auto text-center px-4 md:px-0">
 				<h2 className="text-4xl font-bold text-white mb-6">
 					{dictionary.home.technologies.title}
 				</h2>

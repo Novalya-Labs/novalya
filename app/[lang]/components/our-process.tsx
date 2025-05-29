@@ -37,7 +37,7 @@ export default async function OurProcess({ lang }: { lang: Locale }) {
 	];
 
 	return (
-		<section className="flex flex-col gap-12 py-14 container mx-auto">
+		<section className="flex flex-col gap-12 py-14 container mx-auto px-4 md:px-0">
 			<div className="text-center">
 				<h2 className="text-4xl font-bold mb-6">
 					{dictionary.home.ourProcess.title}

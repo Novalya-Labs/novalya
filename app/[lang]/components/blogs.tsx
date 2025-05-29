@@ -86,7 +86,7 @@ export default async function Blogs({ lang }: { lang: Locale }) {
 	const blogsToDisplay = featuredBlogs.length > 0 ? featuredBlogs : mockBlogs;
 
 	return (
-		<section className="flex flex-col gap-8 py-14 container mx-auto">
+		<section className="flex flex-col gap-8 py-14 container mx-auto px-4 md:px-0">
 			<div className="text-center">
 				<h2 className="text-4xl font-bold mb-6">
 					{dictionary.home.blogs.title}

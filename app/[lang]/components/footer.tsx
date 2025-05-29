@@ -8,9 +8,9 @@ export default async function Footer({ lang }: { lang: Locale }) {
 	const dictionary = await getDictionary(lang);
 
 	return (
-		<footer className="bg-gray-900 text-white py-12">
+		<footer className="bg-gray-900 text-white pt-12 pb-4">
 			<div className="container mx-auto">
-				<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-0">
 					{/* Logo and company info */}
 					<div className="col-span-1">
 						<Link href="/" className="inline-block mb-4">
@@ -117,7 +117,7 @@ export default async function Footer({ lang }: { lang: Locale }) {
 				</div>
 
 				{/* Bottom section */}
-				<div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+				<div className="border-t border-gray-700 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center">
 					<p className="text-xs text-gray-400">
 						&copy; {new Date().getFullYear()} Novalya.{" "}
 						{dictionary.footer.copyright}

@@ -8,8 +8,8 @@ export default async function Hero({ lang }: { lang: Locale }) {
 
 	return (
 		<header className="flex flex-col gap-4 py-14 h-screen pt-24">
-			<div className="mx-auto container grid grid-cols-2 gap-4 h-full">
-				<div className="flex flex-col gap-4 justify-center">
+			<div className="mx-auto container grid grid-cols-1 md:grid-cols-2 gap-4 h-full px-4 md:px-0">
+				<div className="flex flex-col gap-4 justify-center order-2 md:order-1 -mt-40 md:mt-0 z-10">
 					<h1 className="text-6xl font-bold">
 						{dictionary.home.hero.titlePart1}{" "}
 						<span className="text-purple-700 font-black">

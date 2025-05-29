@@ -1,4 +1,33 @@
 {
+	"seo": {
+		"locale": "fr",
+		"languageAlternates": {
+			"fr": "/fr",
+			"en": "/en"
+		},
+		"keywords": {
+			"digitalTransformation": "transformation digitale",
+			"artificialIntelligence": "intelligence artificielle",
+			"automation": "automatisation",
+			"webDevelopment": "développement web",
+			"mobileApp": "application mobile",
+			"sme": "PME",
+			"businessProcesses": "processus métier",
+			"digitalization": "digitalisation",
+			"privacyPolicy": "politique de confidentialité",
+			"dataProtection": "protection des données",
+			"privacy": "vie privée",
+			"legalNotice": "mentions légales",
+			"termsOfService": "conditions générales",
+			"intellectualProperty": "propriété intellectuelle",
+			"liability": "responsabilité"
+		},
+		"openGraph": {
+			"locale": "fr_FR",
+			"siteName": "Novalya",
+			"imageAlt": "Novalya - Transformation Digitale"
+		}
+	},
 	"navigation": {
 		"home": "Accueil",
 		"teams": "Notre équipe",

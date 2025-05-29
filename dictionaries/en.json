@@ -227,5 +227,34 @@
 			"mentions": "Legal Notice",
 			"privacy": "Privacy Policy"
 		}
+	},
+	"seo": {
+		"locale": "en",
+		"languageAlternates": {
+			"fr": "/fr",
+			"en": "/en"
+		},
+		"keywords": {
+			"digitalTransformation": "digital transformation",
+			"artificialIntelligence": "artificial intelligence",
+			"automation": "automation",
+			"webDevelopment": "web development",
+			"mobileApp": "mobile application",
+			"sme": "SME",
+			"businessProcesses": "business processes",
+			"digitalization": "digitalization",
+			"privacyPolicy": "privacy policy",
+			"dataProtection": "data protection",
+			"privacy": "privacy",
+			"legalNotice": "legal notice",
+			"termsOfService": "terms of service",
+			"intellectualProperty": "intellectual property",
+			"liability": "liability"
+		},
+		"openGraph": {
+			"locale": "en_US",
+			"siteName": "Novalya",
+			"imageAlt": "Novalya - Digital Transformation"
+		}
 	}
 }
