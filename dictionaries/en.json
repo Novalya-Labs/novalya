@@ -8,27 +8,99 @@
 	},
 	"home": {
 		"metatags": {
-			"title": "Novalya — Custom technology solutions",
-			"description": "Novalya designs and develops custom digital solutions to boost the performance of businesses. Discover our innovative services."
+			"title": "Novalya — Your digital transformation simplified",
+			"description": "Unlock the potential of your SME: automation, AI and tailored solutions for seamless processes."
 		},
 		"hero": {
-			"title": "Custom technology solutions",
-			"description": "Novalya designs and develops custom digital solutions to boost the performance of businesses. Discover our innovative services."
+			"titlePart1": "Novalya: Your digital transformation",
+			"titleHighlight": "simplified",
+			"descriptionPart1": "Unlock the potential",
+			"descriptionPart2": "of your SME: automation, AI and tailored solutions for seamless processes.",
+			"cta": "Discover our personalized solutions"
 		},
 		"technologies": {
-			"title": "Technologies we use"
+			"title": "Cutting-edge technologies, serving your performance",
+			"description": "At Novalya, we select the most innovative tools to build robust and scalable solutions. Our expertise in artificial intelligence, automation and web/mobile development guarantees concrete results, adapted to your unique needs.",
+			"ai": {
+				"title": "Artificial Intelligence (AI)",
+				"description": "For accurate analysis and smarter decisions."
+			},
+			"automation": {
+				"title": "Process Automation",
+				"description": "To eliminate repetitive tasks and save precious time."
+			},
+			"development": {
+				"title": "Web & Mobile Development",
+				"description": "To create intuitive and performant applications, accessible everywhere."
+			}
 		},
 		"about": {
-			"title": "About Us"
+			"title": "Novalya: Your trusted partner for digital growth",
+			"paragraph1Part1": "Novalya was born from a conviction:",
+			"paragraph1Highlight1": "digitalization",
+			"paragraph1Part2": "must be a growth lever accessible to all SMEs. We support traditional businesses in their digital transition, transforming their",
+			"paragraph1Highlight2": "paper processes",
+			"paragraph1Part3": "into",
+			"paragraph1Highlight3": "fluid and centralized",
+			"paragraph1Part4": "solutions.",
+			"paragraph2Part1": "Our approach is simple: we adapt to your existing environment, without disrupting everything. From initial audit to implementing automation or AI solutions, our team guides you",
+			"paragraph2Highlight1": "end-to-end",
+			"paragraph2Part2": ", with particular attention to",
+			"paragraph2Highlight2": "traceability",
+			"paragraph2Part3": "and",
+			"paragraph2Highlight3": "error reduction",
+			"paragraph2Part4": ".",
+			"conclusion": "We are Novalya, and we are here to make your digital transition a success."
 		},
 		"ourServices": {
-			"title": "Our Services"
+			"title": "Digital services that transform your daily life",
+			"description": "Novalya offers a complete range of services designed to optimize your operations, centralize your information and boost your efficiency.",
+			"audit": {
+				"title": "Audit and Digital Strategy",
+				"description": "We analyze your current processes to identify digitalization opportunities and build a clear roadmap, adapted to your specific objectives."
+			},
+			"automation": {
+				"title": "Intelligent Process Automation",
+				"description": "Say goodbye to repetitive tasks! We implement automated solutions (billing, data management, customer tracking...) to free up your time and reduce errors."
+			},
+			"ai": {
+				"title": "Artificial Intelligence (AI) Integration",
+				"description": "Harness the potential of AI for data analysis, decision support or personalizing your customer relationships, making your operations smarter and more responsive."
+			},
+			"development": {
+				"title": "Custom Web & Mobile Solutions Development",
+				"description": "Need a business software, internal application or specific tool? We develop intuitive web and mobile platforms, designed for your exact needs."
+			},
+			"support": {
+				"title": "Support and Training",
+				"description": "Our mission doesn't stop at implementation. We ensure the adoption of your new tools and train your teams for successful integration."
+			}
 		},
 		"ourProcess": {
-			"title": "Our Process"
+			"title": "A proven method for a smooth digital transition",
+			"description": "We believe in a transparent and collaborative approach. Here's how we transform your processes together.",
+			"step1": {
+				"title": "Understand your reality",
+				"description": "We start with a thorough diagnosis of your current processes to identify your challenges and objectives, without disrupting your organization."
+			},
+			"step2": {
+				"title": "Co-create the solution",
+				"description": "Together, we define the ideal solution, using the most suitable technologies (AI, automation, custom development) to respond precisely to your needs."
+			},
+			"step3": {
+				"title": "Deploy and train",
+				"description": "We implement the solution with rigor and support your teams through personalized training for a smooth adoption."
+			},
+			"step4": {
+				"title": "Follow-up and optimization",
+				"description": "Our commitment doesn't end there. We ensure regular follow-up and continuously optimize solutions to guarantee lasting results."
+			}
 		},
 		"blogs": {
-			"title": "Blogs"
+			"title": "Our latest news: Insights and advice for your digital transformation",
+			"description": "Stay informed about the latest trends in AI, automation and digital strategies for SMEs. Our articles provide you with keys to succeed in your transition.",
+			"readMore": "Read article",
+			"viewAll": "View all articles"
 		}
 	},
 	"contact": {
@@ -59,7 +131,101 @@
 			"description": "Discover our blogs on technology. We share our knowledge and experiences to help you better understand the issues of technology."
 		}
 	},
+	"privacy": {
+		"title": "Privacy Policy",
+		"introduction": {
+			"title": "Introduction",
+			"content": "At Novalya, we are committed to protecting your privacy and personal data. This privacy policy explains how we collect, use, and protect your information when you visit our website or use our services."
+		},
+		"dataCollection": {
+			"title": "Data Collection",
+			"content": "We may collect the following types of information:",
+			"items": [
+				"Contact information (name, email, phone number) when you fill out contact forms",
+				"Technical information about your visit (IP address, browser type, pages visited)",
+				"Information you provide when requesting our services",
+				"Communication data when you contact us directly"
+			]
+		},
+		"dataUsage": {
+			"title": "Use of Data",
+			"content": "We use your personal data for the following purposes:",
+			"items": [
+				"To respond to your inquiries and provide our services",
+				"To improve our website and user experience",
+				"To send you information about our services (with your consent)",
+				"To comply with legal obligations and protect our legitimate interests"
+			]
+		},
+		"cookies": {
+			"title": "Cookies",
+			"content": "Our website may use cookies to improve your browsing experience. You can configure your browser to refuse cookies, but this may affect the functionality of our site."
+		},
+		"rights": {
+			"title": "Your Rights",
+			"content": "Under GDPR and applicable data protection laws, you have the following rights:",
+			"items": [
+				"Right to access your personal data",
+				"Right to rectify inaccurate data",
+				"Right to erasure of your data",
+				"Right to restrict processing",
+				"Right to data portability",
+				"Right to object to processing"
+			]
+		},
+		"contact": {
+			"title": "Contact",
+			"content": "For any questions regarding this privacy policy or to exercise your rights, please contact us at: enzo@novalya.dev"
+		},
+		"updates": {
+			"title": "Policy Updates",
+			"content": "We may update this privacy policy from time to time. Any changes will be posted on this page with an updated effective date."
+		}
+	},
+	"legal": {
+		"title": "Legal Notice",
+		"publisher": {
+			"title": "Site Publisher",
+			"content": "This website is published by Novalya, a company specializing in digital transformation solutions for SMEs."
+		},
+		"hosting": {
+			"title": "Hosting",
+			"content": "This website is hosted by a certified hosting provider ensuring the security and availability of our services."
+		},
+		"intellectualProperty": {
+			"title": "Intellectual Property",
+			"content": "All content on this site (texts, images, logos, design) is protected by intellectual property rights. Any reproduction without authorization is prohibited."
+		},
+		"responsibility": {
+			"title": "Responsibility",
+			"content": "Novalya strives to provide accurate and up-to-date information. However, we cannot guarantee the accuracy, completeness, or timeliness of the information presented."
+		},
+		"applicableLaw": {
+			"title": "Applicable Law",
+			"content": "This site is governed by French law. Any dispute will be subject to the jurisdiction of French courts."
+		},
+		"contact": {
+			"title": "Contact",
+			"content": "For any questions regarding these legal notices, please contact us at: enzo@novalya.dev"
+		}
+	},
 	"footer": {
-		"copyright": "All rights reserved"
+		"copyright": "All rights reserved",
+		"contact": {
+			"phone": "+33652198725",
+			"phoneLabel": "+33 6 52 19 87 25",
+			"email": "enzo@novalya.dev",
+			"location": "France, World"
+		},
+		"navigation": {
+			"services": "Our services",
+			"about": "About us",
+			"process": "Our approach",
+			"blog": "Blog"
+		},
+		"legal": {
+			"mentions": "Legal Notice",
+			"privacy": "Privacy Policy"
+		}
 	}
 }

@@ -7,7 +7,7 @@ export default async function Header({ lang }: { lang: Locale }) {
 	const dictionary = await getDictionary(lang);
 
 	return (
-		<header className="fixed top-4 left-4 right-4 z-50 flex justify-between items-center p-2 backdrop-blur-sm bg-white/20 rounded-lg border border-neutral-200/30">
+		<header className="fixed top-4 left-4 right-4 z-50 flex justify-between items-center p-2 backdrop-blur-sm bg-neutral-900/20 rounded-lg border border-neutral-200/30 container mx-auto">
 			<div className="flex-1 flex justify-start">
 				<Link href="/">
 					<Image src="/logo.png" alt="Novalya" width={48} height={48} />

@@ -1,10 +1,10 @@
 import { i18n, type Locale } from "@/i18n-config";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
-export const metadata = {
-	title: "Novalya",
-	description: "Novalya",
-};
+const geist = Geist({
+	subsets: ["latin"],
+});
 
 export async function generateStaticParams() {
 	return i18n.locales.map((locale) => ({ lang: locale }));
@@ -19,8 +19,8 @@ export default async function Root(props: {
 	const { children } = props;
 
 	return (
-		<html lang={params.lang}>
-			<body>{children}</body>
+		<html lang={params.lang} className={geist.className}>
+			<body className="bg-background text-foreground">{children}</body>
 		</html>
 	);
 }

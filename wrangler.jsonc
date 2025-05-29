@@ -6,5 +6,19 @@
 	"assets": {
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
-	}
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "novalya-blog-db",
+			"database_id": "062bf334-61a5-44b2-a12e-b30936bdfbc5",
+			"migrations_dir": "drizzle"
+		}
+	],
+	"r2_buckets": [
+		{
+			"bucket_name": "novalya-blog-images",
+			"binding": "BLOG_IMAGES"
+		}
+	]
 }

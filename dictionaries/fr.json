@@ -8,27 +8,99 @@
 	},
 	"home": {
 		"metatags": {
-			"title": "Novalya — Solutions technologiques sur mesure",
-			"description": "Novalya conçoit et développe des solutions numériques sur mesure pour booster la performance des entreprises. Découvrez nos services innovants."
+			"title": "Novalya — Votre transition numérique simplifiée",
+			"description": "Libérez le potentiel de votre PME : automatisation, IA et solutions sur mesure pour des processus fluides."
 		},
 		"hero": {
-			"title": "Solutions technologiques sur mesure",
-			"description": "Novalya conçoit et développe des solutions numériques sur mesure pour booster la performance des entreprises. Découvrez nos services innovants."
+			"titlePart1": "Novalya : Votre transition numérique",
+			"titleHighlight": "simplifiée",
+			"descriptionPart1": "Libérez le potentiel",
+			"descriptionPart2": "de votre PME : automatisation, IA et solutions sur mesure pour des processus fluides.",
+			"cta": "Découvrez nos solutions personnalisées"
 		},
 		"technologies": {
-			"title": "Technologies que nous utilisons"
-		},
-		"ourServices": {
-			"title": "Nos services"
-		},
-		"ourProcess": {
-			"title": "Notre processus"
+			"title": "Des technologies de pointe, au service de votre performance",
+			"description": "Chez Novalya, nous sélectionnons les outils les plus innovants pour bâtir des solutions robustes et évolutives. Notre expertise en intelligence artificielle, automatisation et développement web/mobile garantit des résultats concrets, adaptés à vos besoins uniques.",
+			"ai": {
+				"title": "Intelligence Artificielle (IA)",
+				"description": "Pour des analyses précises et des décisions plus intelligentes."
+			},
+			"automation": {
+				"title": "Automatisation des processus",
+				"description": "Pour éliminer les tâches répétitives et gagner un temps précieux."
+			},
+			"development": {
+				"title": "Développement Web & Mobile",
+				"description": "Pour créer des applications intuitives et performantes, accessibles partout."
+			}
 		},
 		"about": {
-			"title": "À propos de nous"
+			"title": "Novalya : Votre partenaire de confiance pour une croissance digitale",
+			"paragraph1Part1": "Novalya est née d'une conviction : la",
+			"paragraph1Highlight1": "digitalisation",
+			"paragraph1Part2": "doit être un levier de croissance accessible à toutes les PME. Nous accompagnons les entreprises traditionnelles dans leur transition numérique, en transformant leurs",
+			"paragraph1Highlight2": "processus papier",
+			"paragraph1Part3": "en solutions",
+			"paragraph1Highlight3": "fluides et centralisées",
+			"paragraph1Part4": ".",
+			"paragraph2Part1": "Notre approche est simple : nous nous adaptons à votre environnement existant, sans tout chambouler. De l'audit initial à la mise en œuvre de solutions d'automatisation ou d'IA, notre équipe vous guide",
+			"paragraph2Highlight1": "de bout en bout",
+			"paragraph2Part2": ", avec une attention particulière à la",
+			"paragraph2Highlight2": "traçabilité",
+			"paragraph2Part3": "et à la",
+			"paragraph2Highlight3": "réduction des erreurs",
+			"paragraph2Part4": ".",
+			"conclusion": "Nous sommes Novalya, et nous sommes là pour faire de votre transition numérique un succès."
+		},
+		"ourServices": {
+			"title": "Des services numériques qui transforment votre quotidien",
+			"description": "Novalya propose une gamme complète de services conçus pour optimiser vos opérations, centraliser vos informations et booster votre efficacité.",
+			"audit": {
+				"title": "Audit et Stratégie Digitale",
+				"description": "Nous analysons vos processus actuels pour identifier les opportunités de digitalisation et construire une feuille de route claire, adaptée à vos objectifs spécifiques."
+			},
+			"automation": {
+				"title": "Automatisation Intelligente des Processus",
+				"description": "Dites adieu aux tâches répétitives ! Nous mettons en place des solutions automatisées (facturation, gestion de données, suivi client...) pour libérer votre temps et réduire les erreurs."
+			},
+			"ai": {
+				"title": "Intégration d'Intelligence Artificielle (IA)",
+				"description": "Exploitez le potentiel de l'IA pour l'analyse de données, l'aide à la décision ou la personnalisation de votre relation client, rendant vos opérations plus intelligentes et réactives."
+			},
+			"development": {
+				"title": "Développement de Solutions Web & Mobile Sur Mesure",
+				"description": "Besoin d'un logiciel métier, d'une application interne ou d'un outil spécifique ? Nous développons des plateformes web et mobiles intuitives, conçues pour vos besoins exacts."
+			},
+			"support": {
+				"title": "Accompagnement et Formation",
+				"description": "Notre mission ne s'arrête pas à la mise en place. Nous assurons la prise en main de vos nouveaux outils et formons vos équipes pour une adoption réussie."
+			}
+		},
+		"ourProcess": {
+			"title": "Une méthode éprouvée pour une transition numérique en douceur",
+			"description": "Nous croyons en une approche transparente et collaborative. Voici comment nous transformons ensemble vos processus.",
+			"step1": {
+				"title": "Comprendre votre réalité",
+				"description": "Nous commençons par un diagnostic approfondi de vos processus actuels pour cerner vos défis et vos objectifs, sans bouleverser votre organisation."
+			},
+			"step2": {
+				"title": "Co-créer la solution",
+				"description": "Ensemble, nous définissons la solution idéale, en utilisant les technologies les plus adaptées (IA, automatisation, développement sur mesure) pour répondre précisément à vos besoins."
+			},
+			"step3": {
+				"title": "Déployer et former",
+				"description": "Nous mettons en œuvre la solution avec rigueur et accompagnons vos équipes par des formations personnalisées pour une prise en main sereine."
+			},
+			"step4": {
+				"title": "Suivi et optimisation",
+				"description": "Notre engagement ne s'arrête pas là. Nous assurons un suivi régulier et optimisons continuellement les solutions pour garantir des résultats durables."
+			}
 		},
 		"blogs": {
-			"title": "Blogs"
+			"title": "Nos dernières actualités : Insights et conseils pour votre transformation digitale",
+			"description": "Restez informés des dernières tendances en matière d'IA, d'automatisation et de stratégies numériques pour les PME. Nos articles vous apportent des clés pour réussir votre transition.",
+			"readMore": "Lire l'article",
+			"viewAll": "Voir tous les articles"
 		}
 	},
 	"contact": {
@@ -59,7 +131,101 @@
 			"description": "Découvrez nos blogs sur la technologie. Nous partageons nos connaissances et expériences pour vous aider à mieux comprendre les enjeux de la technologie."
 		}
 	},
+	"privacy": {
+		"title": "Politique de Confidentialité",
+		"introduction": {
+			"title": "Introduction",
+			"content": "Chez Novalya, nous nous engageons à protéger votre vie privée et vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous visitez notre site web ou utilisez nos services."
+		},
+		"dataCollection": {
+			"title": "Collecte de Données",
+			"content": "Nous pouvons collecter les types d'informations suivants :",
+			"items": [
+				"Informations de contact (nom, email, téléphone) lorsque vous remplissez des formulaires de contact",
+				"Informations techniques sur votre visite (adresse IP, type de navigateur, pages visitées)",
+				"Informations que vous fournissez lors de demandes de nos services",
+				"Données de communication lorsque vous nous contactez directement"
+			]
+		},
+		"dataUsage": {
+			"title": "Utilisation des Données",
+			"content": "Nous utilisons vos données personnelles aux fins suivantes :",
+			"items": [
+				"Pour répondre à vos demandes et fournir nos services",
+				"Pour améliorer notre site web et l'expérience utilisateur",
+				"Pour vous envoyer des informations sur nos services (avec votre consentement)",
+				"Pour respecter nos obligations légales et protéger nos intérêts légitimes"
+			]
+		},
+		"cookies": {
+			"title": "Cookies",
+			"content": "Notre site web peut utiliser des cookies pour améliorer votre expérience de navigation. Vous pouvez configurer votre navigateur pour refuser les cookies, mais cela peut affecter la fonctionnalité de notre site."
+		},
+		"rights": {
+			"title": "Vos Droits",
+			"content": "Selon le RGPD et les lois applicables sur la protection des données, vous avez les droits suivants :",
+			"items": [
+				"Droit d'accès à vos données personnelles",
+				"Droit de rectification des données inexactes",
+				"Droit à l'effacement de vos données",
+				"Droit à la limitation du traitement",
+				"Droit à la portabilité des données",
+				"Droit d'opposition au traitement"
+			]
+		},
+		"contact": {
+			"title": "Contact",
+			"content": "Pour toute question concernant cette politique de confidentialité ou pour exercer vos droits, veuillez nous contacter à : enzo@novalya.dev"
+		},
+		"updates": {
+			"title": "Mises à Jour de la Politique",
+			"content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Tout changement sera publié sur cette page avec une date d'entrée en vigueur mise à jour."
+		}
+	},
+	"legal": {
+		"title": "Mentions Légales",
+		"publisher": {
+			"title": "Éditeur du Site",
+			"content": "Ce site web est édité par Novalya, société spécialisée dans les solutions de transformation digitale pour les PME."
+		},
+		"hosting": {
+			"title": "Hébergement",
+			"content": "Ce site web est hébergé par un prestataire d'hébergement certifié garantissant la sécurité et la disponibilité de nos services."
+		},
+		"intellectualProperty": {
+			"title": "Propriété Intellectuelle",
+			"content": "Tous les contenus de ce site (textes, images, logos, design) sont protégés par les droits de propriété intellectuelle. Toute reproduction sans autorisation est interdite."
+		},
+		"responsibility": {
+			"title": "Responsabilité",
+			"content": "Novalya s'efforce de fournir des informations exactes et à jour. Cependant, nous ne pouvons garantir l'exactitude, l'exhaustivité ou l'actualité des informations présentées."
+		},
+		"applicableLaw": {
+			"title": "Loi Applicable",
+			"content": "Ce site est régi par le droit français. Tout litige sera soumis à la compétence des tribunaux français."
+		},
+		"contact": {
+			"title": "Contact",
+			"content": "Pour toute question concernant ces mentions légales, veuillez nous contacter à : enzo@novalya.dev"
+		}
+	},
 	"footer": {
-		"copyright": "Tous droits réservés"
+		"copyright": "Tous droits réservés",
+		"contact": {
+			"phone": "+33652198725",
+			"phoneLabel": "+33 6 52 19 87 25",
+			"email": "enzo@novalya.dev",
+			"location": "France, Monde"
+		},
+		"navigation": {
+			"services": "Nos services",
+			"about": "Qui sommes-nous ?",
+			"process": "Notre approche",
+			"blog": "Blog"
+		},
+		"legal": {
+			"mentions": "Mentions Légales",
+			"privacy": "Politique de Confidentialité"
+		}
 	}
 }
