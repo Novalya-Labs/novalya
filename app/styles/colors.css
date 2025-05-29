@@ -1,0 +1,70 @@
+:root {
+  /* Palette de couleurs principale */
+  --primary-blue: #0095ff;
+  --primary-purple: #7b2ff7;
+  --primary-cyan: #00d2ff;
+  
+  /* Dégradés */
+  --gradient-blue-purple: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-purple) 100%);
+  --gradient-cyan-blue: linear-gradient(135deg, var(--primary-cyan) 0%, var(--primary-blue) 100%);
+  --gradient-purple-cyan: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-cyan) 100%);
+  
+  /* Couleurs de fond */
+  --bg-dark: #0a0e17;
+  --bg-dark-lighter: #111827;
+  --bg-card: rgba(17, 24, 39, 0.7);
+  --bg-glass: rgba(255, 255, 255, 0.05);
+  
+  /* Couleurs de texte */
+  --text-white: #ffffff;
+  --text-light: #f3f4f6;
+  --text-muted: #d1d5db;
+  --text-highlight-blue: #38bdf8;
+  --text-highlight-purple: #a78bfa;
+  
+  /* Couleurs d'accentuation */
+  --accent-success: #10b981;
+  --accent-warning: #f59e0b;
+  --accent-error: #ef4444;
+  
+  /* Ombres */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --shadow-glow-blue: 0 0 15px rgba(0, 149, 255, 0.5);
+  --shadow-glow-purple: 0 0 15px rgba(123, 47, 247, 0.5);
+  
+  /* Bordures */
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-medium: rgba(255, 255, 255, 0.2);
+}
+
+/* Classes utilitaires pour les dégradés */
+.bg-gradient-blue-purple {
+  background: var(--gradient-blue-purple);
+}
+
+.bg-gradient-cyan-blue {
+  background: var(--gradient-cyan-blue);
+}
+
+.bg-gradient-purple-cyan {
+  background: var(--gradient-purple-cyan);
+}
+
+/* Classes utilitaires pour les effets de glassmorphism */
+.bg-glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-light);
+}
+
+/* Classes utilitaires pour les ombres */
+.shadow-glow-blue {
+  box-shadow: var(--shadow-glow-blue);
+}
+
+.shadow-glow-purple {
+  box-shadow: var(--shadow-glow-purple);
+}
