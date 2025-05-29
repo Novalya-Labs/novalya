@@ -5,10 +5,10 @@
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
+		"build:cloudflare": "NODE_OPTIONS='--max-old-space-size=2048' next build",
 		"start": "next start",
 		"lint": "biome check .",
-		"lint:fix": "biome check . --write",
-		"deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+		"lint:fix": "biome check . --write"
 	},
 	"dependencies": {
 		"@formatjs/intl-localematcher": "^0.6.1",
