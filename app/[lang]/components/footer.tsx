@@ -44,14 +44,6 @@ export default async function Footer({ lang }: { lang: Locale }) {
 							</li>
 							<li>
 								<Link
-									href="/teams"
-									className="text-gray-300 hover:text-white transition-colors duration-200"
-								>
-									{dictionary.footer.navigation.about}
-								</Link>
-							</li>
-							<li>
-								<Link
 									href="/blogs"
 									className="text-gray-300 hover:text-white transition-colors duration-200"
 								>
