@@ -99,10 +99,10 @@ export default async function BlogsPage(props: {
 				<meta property="og:image" content="https://novalya.dev/og-image.jpg" />
 			</Head>
 			<Header lang={lang} />
-			<main className="flex flex-col gap-16 container mx-auto py-8">
+			<main className="flex flex-col gap-16 container mx-auto pb-16 pt-32">
 				<div className="text-center">
 					<h1 className="text-5xl font-bold mb-6">{dictionary.blogs.title}</h1>
-					<p className="text-xl text-gray-600 max-w-3xl mx-auto">
+					<p className="text-xl text-neutral-400 max-w-3xl mx-auto">
 						{lang === "fr"
 							? "Découvrez nos derniers articles sur la transformation digitale, les technologies modernes et l'innovation."
 							: "Discover our latest articles on digital transformation, modern technologies and innovation."}
@@ -113,7 +113,7 @@ export default async function BlogsPage(props: {
 					{allBlogs.map((blog) => (
 						<article
 							key={blog.slug}
-							className="bg-white rounded-lg shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300"
+							className="bg-neutral-900 rounded-lg shadow-lg border border-neutral-800 overflow-hidden hover:shadow-xl transition-shadow duration-300"
 						>
 							<div className="aspect-video relative overflow-hidden">
 								<Image
@@ -124,7 +124,7 @@ export default async function BlogsPage(props: {
 								/>
 							</div>
 							<div className="p-6">
-								<div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+								<div className="flex items-center gap-4 text-sm text-neutral-400 mb-3">
 									<span>{blog.author}</span>
 									<span>•</span>
 									<span>
@@ -140,10 +140,10 @@ export default async function BlogsPage(props: {
 											: ""}
 									</span>
 								</div>
-								<h2 className="text-xl font-bold mb-3 text-gray-800 line-clamp-2">
+								<h2 className="text-xl font-bold mb-3 text-neutral-100 line-clamp-2">
 									{blog.title}
 								</h2>
-								<p className="text-gray-600 mb-4 line-clamp-3">
+								<p className="text-neutral-400 mb-4 line-clamp-3">
 									{blog.excerpt}
 								</p>
 								<Link
